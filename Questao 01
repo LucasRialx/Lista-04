@@ -1,0 +1,78 @@
+import java.util.*;
+public class Main {
+ public static void main(String[] args) {
+   dobro();
+   maior();
+   media();
+   fator();
+   soma();
+ }
+  // Solicita a entrada de um número e apresenta o dobro ao usuario.
+public static int dobro()
+{
+Scanner Entrada = new Scanner(System.in);
+int dobro;
+  System.out.println("Digite um número:");
+  dobro = Entrada.nextInt();
+  dobro = dobro*2;
+  System.out.println("O dobro é:"+dobro);
+  return 0;
+}
+  //Solicita dois numeros e apresenta o maior numero para o usuario.
+public static int maior(){
+Scanner Entrada = new Scanner(System.in);
+int n1,n2;
+  System.out.println("Digite um número:");
+  n1 = Entrada.nextInt();
+  System.out.println("Digite um número:");
+  n2 = Entrada.nextInt();
+
+  if (n1>n2){
+  System.out.println("O maior é:"+n1);
+  }
+  else{
+  System.out.println("O maior é:"+n2);
+  }
+  return 0;  
+}
+  //Solicita 3 numeros e apresenta a media deles para o usuario.
+public static int media(){
+Scanner Entrada = new Scanner(System.in);
+int c = 0,a;
+for (int i=0; i<3; i++){
+  System.out.println("Digite um número:");
+  a = Entrada.nextInt();
+  c = c+a;
+}
+  c= c/3;
+  System.out.println("a media dos 3 números é:" +c);
+  return 0;
+}
+  //Solicita 1 numero e apresenta o fator do numero para o usuario.
+public static int fator(){ 
+Scanner Entrada = new Scanner(System.in);
+int n, c, x;
+  System.out.println("Digite um número:");
+  n = Entrada.nextInt();
+  n = n++;
+  c=1;
+  for (int i=1; i<=n; i++){
+  c = c*i;
+  }
+  System.out.println("Digite um número:"+ c);
+return 0;
+}
+  //Solicita 1 numero e efetua a soma do intervalo de numeros de 1 até o numero escolhido.
+public static int soma(){
+Scanner Entrada = new Scanner(System.in);
+int n,c;
+  System.out.println("Digite um número:");
+  n = Entrada.nextInt();
+  c = 0;
+for (int i=1; i<=n; i++){
+  c = c+i;
+}
+System.out.println("Digite um número:"+ c);
+return 0;
+  }
+}
