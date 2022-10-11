@@ -1,0 +1,56 @@
+import java.util.*;
+public class Main {
+ public static void main(String[] args) {
+   soma();
+   sub();
+   mult();
+ }
+//Solicita a entrada de 2 números e apresenta a soma ao usuario.
+public static int soma()
+{
+Scanner Entrada = new Scanner(System.in);
+int a,b,r;
+  
+  System.out.println("Digite um número:");
+  a = Entrada.nextInt();
+  System.out.println("Digite um número:");
+  b = Entrada.nextInt();
+
+  r=a+b;
+  
+  System.out.println("A soma é:"+r);
+  return 0;
+}
+//Solicita a entrada de 2 números e apresenta a subtração ao usuario.
+public static int sub()
+{
+Scanner Entrada = new Scanner(System.in);
+int a,b,r;
+  
+  System.out.println("Digite um número:");
+  a = Entrada.nextInt();
+  System.out.println("Digite um número:");
+  b = Entrada.nextInt();
+
+  r=a-b;
+  
+  System.out.println("A subtração é: "+r);
+  return 0;
+}
+//Solicita a entrada de 2 números e apresenta a multiplicação ao usuario.
+public static int mult()
+{
+Scanner Entrada = new Scanner(System.in);
+int a,b,r;
+  
+  System.out.println("Digite um número:");
+  a = Entrada.nextInt();
+  System.out.println("Digite um número:");
+  b = Entrada.nextInt();
+
+  r=a*b;
+  
+  System.out.println("A multiplicação é: "+r);
+  return 0;
+}  
+}
